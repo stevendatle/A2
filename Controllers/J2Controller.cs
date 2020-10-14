@@ -29,6 +29,7 @@ namespace A2.Controllers
                     //checking if sum is 10
                     if (i + v == 10)
                     {
+                        //if sum is 10, adds +1 to solutions
                         solutions++;
                     }
                 }
