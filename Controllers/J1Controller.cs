@@ -15,7 +15,7 @@ namespace A2.Controllers
         [Route("api/J1/Menu/{burger}/{drink}/{side}/{dessert}")]
         public string Menu(int burger, int drink, int side, int dessert)
         {
-            //Run int burger through 1 - 4 
+            //Run int burger through 1 - 4 menu selections
             if (burger == 1)
             {
                 burger = 461;
@@ -30,7 +30,7 @@ namespace A2.Controllers
                 burger = 0;
             }
 
-            //Run int drink through 1 - 4
+            //Run int drink through 1 - 4 menu selections
             if (drink == 1)
             {
                 drink = 130;
@@ -45,7 +45,7 @@ namespace A2.Controllers
                 drink = 0;
             }
 
-            //Run int side through 1 - 4
+            //Run int side through 1 - 4 menu selections
             if (side == 1)
             {
                 side = 100;
@@ -60,7 +60,7 @@ namespace A2.Controllers
                 side = 0;
             }
 
-            //Run int dessert through 1 - 4
+            //Run int dessert through 1 - 4 menu selections
             if (dessert == 1)
             {
                 dessert = 167;
@@ -75,7 +75,9 @@ namespace A2.Controllers
                 dessert = 0;
             }
 
+            //Final calculation for total amount of calories
             int calories = burger + drink + side + dessert;
+            //Final prompt
             return "Your total calories is " + calories;
         }
     }
