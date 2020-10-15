@@ -36,10 +36,8 @@ namespace A2.Controllers
             }
 
           //final prompt
-            return "There are " + solutions + " ways to get the sum of 10";
+          return "There are " + solutions + " ways to get the sum of 10";
             
-
-
         }
 
 
